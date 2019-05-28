@@ -1,0 +1,87 @@
+.container{ /* nunca se ira al 100%*/
+  max-width: 900px; /*va permitir que las columnas tengan un espaciado hacia los lados*/
+  margin: auto; /*para que se alinie al centro el container*/
+  width: 90%;
+  padding: 100px;
+    
+}
+
+.row{ /* se encarga de llevar las columnas horizontal*/
+  display: flex;
+
+}
+
+.col-1{ /* se divide el 100% de la pagina en la cantidad de columnas en este casi 12*/
+
+ width: 8.3333333333333%;
+}
+
+.col-2{ /* digamos que dos columnas, lo multiplico por 2*/
+  width: 16.66666666666%;
+}
+
+.col-3{ /* por 3*/
+  width:  24.9999999999%;
+}
+
+.col-4{ /* por 4*/
+  width: 33.3333333332%;
+}
+
+.col-5{ /*por 5*/
+  width: 41.6666666665%;
+}
+
+.col-6{ /*por 6*/
+  width: 49.9999999998%;
+}
+
+.col-7{ /*por 7*/
+  width: 8.33333333337%;
+}
+
+.col-8{/*por 8*/
+  width:  66.6666666664%;
+}
+
+.col-9{ /*por 9*/
+  width: 74.9999999997%;
+}
+
+.col-10{ /*por 10*/
+  width:  83.333333333%;
+}
+
+.col-11{ /*por 11*/
+  width:  91.6666666663%;
+}
+
+.col-12{ /*por 12 o ponerlo 100% ya que la ultima columna abarca todo el espacio*/
+  width: 100%;
+}
+
+/*la jerarquia es container > row > column*/ 
+
+.col-1,.col-2,.col-3,.col-4,.col-5,.col-6,.col-7,.col-8,.col-9,.col-10,.col-11,.col-12{
+  padding: 10px;
+}
+
+.container img{
+  width: 150px;
+}
+
+
+@media(max-width:900px){
+  .row{
+    display: inherit;
+    padding: 10px;
+  }
+  .col-1,.col-2,.col-3,.col-4,.col-5,.col-6,.col-7,.col-8,.col-9,.col-10,.col-11,.col-12{
+    width: 100%;
+    padding: 0px;
+    
+  }
+  .container{
+    padding: 30px;
+  }
+}

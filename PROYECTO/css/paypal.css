@@ -1,0 +1,12 @@
+body{
+  background-color: var(--black-color);
+  text-align: center;
+  color: var(--white-color);
+  display: flex;
+  justify-content: center;/*para centrar todo */
+  align-items: center; /* para que todos los elementos del body esten centrados*/
+  height: 100vh; /*el vh es view high es para que todo sea responsive con el tamaño de la pagina*/
+}
+.content_paypal a{
+  color: var(--green-color);
+}
